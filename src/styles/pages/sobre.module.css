@@ -1,19 +1,69 @@
 .sobreContainer {
-    padding: 10rem 20rem;
+    background-color: #141414;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    text-align: start;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 5rem 10rem;
+    font-size: 1.2rem;
 }
 
 .sobreTitle {
-    font-size: 2.5rem;
-    color: #31081F;
+    text-align: center;
+    font-size: 2rem;
+    color: #B33F62;
+    margin-bottom: 1rem;
 }
 
-.sobreText {
-    font-size: 1.5rem;
-    color: #474a51;
+.sobreContainerIntroducao {
+    color: #fff;
+    width: 50%;
+    padding: 0 2rem;
+}
+
+.sobreContainerTrivia {
+    width: 40%;
+}
+
+.sobreIcons {
+    background-image: linear-gradient(45deg, hsla(301, 61%, 30%, 1) 0%, hsla(342, 48%, 47%, 1) 50%, hsla(2, 93%, 64%, 1) 100%);
+    border-radius: 50%;
+    color: #fff;
+    padding: 0.5rem;
+    margin-right: 10px;
+}
+
+.sobreSubontainerFavoritos {
+    border: 5px solid #FBC3BC;
+    border-image: linear-gradient(45deg, hsla(301, 61%, 30%, 1) 0%, hsla(342, 48%, 47%, 1) 50%, hsla(2, 93%, 64%, 1) 100%) 1; 
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 5rem;
+}
+
+.sobreSubontainerFavoritos p {
+    position: relative;
+    top: 14px;
+    color: #fff;
+}
+
+.sobreSubontainerObjetivos {
+    border: 5px solid #FBC3BC;
+    border-image: linear-gradient(45deg, hsla(301, 61%, 30%, 1) 0%, hsla(342, 48%, 47%, 1) 50%, hsla(2, 93%, 64%, 1) 100%) 1; 
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    color: #fff;
+}
+
+span {
+    display: flex;
+    flex-direction: row;
+    margin: 0.8rem 0;
+}
+
+.sobreSubontainerObjetivos ul li {
+    position: relative;
+    top: 14px;
 }

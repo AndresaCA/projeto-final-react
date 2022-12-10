@@ -47,6 +47,14 @@ export function Contato() {
     return(
         <>
             <Header text="Entre em contato" image={img} />
+
+            <div className={styles.socialNetworks}>
+                <ul>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
             <div className={styles.formContainer}>
                 <form className={styles.form} onSubmit={createMessage}>
                     <input onChange={handleInputName} className={styles.formInput} placeholder="Digite seu nome" value={nome}/>

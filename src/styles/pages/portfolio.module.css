@@ -1,61 +1,136 @@
 .portfolioContainer {
-    padding: 10rem 20rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
-    align-items: center;
+    background-color: #141414;
+    color: #fff;
+    padding: 5rem 10rem;
 }
 
 .portfolioTitle {
     font-size: 2.5rem;
-    color: #31081F;
-    margin-bottom: 2rem;
-}
-
-.portfolioSubcontainer {
+    color: #B33F62;
+    margin-bottom: 1rem;
     text-align: center;
 }
 
+.portfolioSubcontainer {
+    margin-bottom: 5rem;
+}
+
 .portfolioList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.portfolioListTecnologias {
     display: flex;
-    flex-direction: row;  
+    flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
-    gap: 4rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+.portfolioListItemTecnologias {
+    border-radius: 1rem;
+    width: 15rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.star {
+    background-image: linear-gradient(270deg, hsla(301, 61%, 30%, 1) 0%, hsla(342, 48%, 47%, 1) 50%, hsla(2, 93%, 64%, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 1.5rem;
 }
 
 .portfolioListItem {
-    border: 2px solid #474a51;
-    width: 10rem;
-    height: fit-content;
-    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
 }
 
-.portfolioListItemDown {
-    background-color: #474a51;
+.portfolioListItemRepo {
+    background-color: #141414;
+    border: 3px solid #B33F62;
+    border-image: linear-gradient(45deg, hsla(301, 61%, 30%, 1) 0%, hsla(342, 48%, 47%, 1) 50%, hsla(2, 93%, 64%, 1) 100%) 1;
+    width: 15rem;
+    height: 15rem;
+    display: grid;
+    text-align: center;
+    place-items: center;
+    margin: 1rem auto; 
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.portfolioListItemRepo:hover {
+    -webkit-animation: aumenta 0.2s ease-out both;
+	        animation: aumenta 0.2s ease-out both;
+}
+
+.repositoryName {
+    color: #B33F62;
+}
+
+.repositoryLink {
+    background-color: #CF7792;
     color: #fff;
-    width: 10rem;
-    padding: 3rem;
+    font-size: 0.8rem;
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: fit-content;
+    padding: 0.5rem;
+    border-radius: 1rem;
 }
 
-.portfolioListItemDown:hover {
-    cursor: pointer;
-    -webkit-animation: aumentar 0.4s forwards;
-            animation: aumentar 0.4s forwards;
+.repositoryLink:hover {
+    background-color: #B33F62;
+    color: #fff;
 }
 
-@-webkit-keyframes aumentar {
+@-webkit-keyframes aumenta {
     to {
-      -webkit-transform: scale(1.5);
-              transform: scale(1.5);
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+              border-image: linear-gradient(-90deg, hsla(301, 61%, 30%, 1) 0%, hsla(342, 48%, 47%, 1) 50%, hsla(2, 93%, 64%, 1) 100%) 1;
     }
   }
-  @keyframes aumentar {
-    to {
-      -webkit-transform: scale(1.5);
-              transform: scale(1.5);
+
+@media(max-width:765px) {
+    .portfolioContainer {
+        flex-direction: column;
+        gap: 1.2rem;
     }
-  }
+
+    .portfolioTitle {
+        font-size: 2.5rem;
+        color: #B33F62;
+        margin-bottom: 1rem;
+    }
+
+    .portfolioSubcontainer {
+        flex-direction: column;
+        margin-bottom: 5rem;
+    }
+
+    .portfolioList {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .portfolioListTecnologias {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+  
+  
   

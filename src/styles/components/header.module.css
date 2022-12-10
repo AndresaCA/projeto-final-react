@@ -1,5 +1,5 @@
 .headerContainer {
-    background: linear-gradient(180deg, hsla(326, 72%, 11%, 1) 0%, hsla(345, 73%, 18%, 1) 33.333333333333336%, hsla(353, 75%, 24%, 1) 66.66666666666667%, hsla(353, 53%, 31%, 1) 100%);
+    background: linear-gradient(45deg, hsla(301, 61%, 30%, 1) 0%, hsla(342, 48%, 47%, 1) 50%, hsla(2, 93%, 64%, 1) 100%);
     padding: 6rem;
     display: flex;
     flex-direction: column;

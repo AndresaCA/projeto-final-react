@@ -1,5 +1,5 @@
 .menuContainer {
-    background-color: #fff;
+    background-color: #141414;
     padding: 2rem;
     display: flex;
     flex-direction: row;
@@ -24,11 +24,11 @@
     font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
-    color: #6B0F1A;
+    color: #CF7792;
 }
 
 .menuLink:hover {
-    color: #08415C;
+    color: #B54063;
 }
 
 @media(max-width:765px) {

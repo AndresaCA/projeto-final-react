@@ -1,5 +1,6 @@
 .homeContainer{
-    padding: 10rem;
+    background-color: #141414;
+    padding: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,13 +15,17 @@
 .cardTitle {
     padding: 1rem;
     font-size: 2rem;
-    color: #474a51
+    color: #CF7792;
+}
+
+.cardIcon {
+    color: #B54063;
 }
         
 .cardText {
     font-size: 1.2rem;
-    align-text: center;
-    color: #474a51;
+    text-align: center;
+    color: #fff;
 }
         
 @media(max-width: 765px) {
